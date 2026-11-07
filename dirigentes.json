@@ -1,0 +1,680 @@
+{
+  "proyecto": "FIFA político",
+  "edicion": "2003-2015",
+  "version": 1,
+  "nota": "Datos transcritos del ranking consolidado del usuario. Períodos y cargos individuales pendientes de completar y verificar.",
+  "dirigentes": [
+    {
+      "id": "cristina-fernandez-de-kirchner",
+      "nombre": "Cristina Fernández de Kirchner",
+      "atributos": {
+        "liderazgo": 95,
+        "gestion": 90,
+        "negociacion": 88,
+        "tecnica": 86,
+        "comunicacion": 94,
+        "electoral": 98
+      },
+      "overall": 93,
+      "imagen": "images/dirigentes/cristina-fernandez-de-kirchner.jpg"
+    },
+    {
+      "id": "nestor-kirchner",
+      "nombre": "Néstor Kirchner",
+      "atributos": {
+        "liderazgo": 95,
+        "gestion": 90,
+        "negociacion": 88,
+        "tecnica": 84,
+        "comunicacion": 88,
+        "electoral": 94
+      },
+      "overall": 90,
+      "imagen": "images/dirigentes/nestor-kirchner.jpg"
+    },
+    {
+      "id": "amado-boudou",
+      "nombre": "Amado Boudou",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 88,
+        "negociacion": 80,
+        "tecnica": 86,
+        "comunicacion": 84,
+        "electoral": 74
+      },
+      "overall": 86,
+      "imagen": "images/dirigentes/amado-boudou.jpg"
+    },
+    {
+      "id": "jorge-capitanich",
+      "nombre": "Jorge Capitanich",
+      "atributos": {
+        "liderazgo": 88,
+        "gestion": 80,
+        "negociacion": 84,
+        "tecnica": 86,
+        "comunicacion": 88,
+        "electoral": 84
+      },
+      "overall": 84,
+      "imagen": "images/dirigentes/jorge-capitanich.jpg"
+    },
+    {
+      "id": "sergio-massa",
+      "nombre": "Sergio Massa",
+      "atributos": {
+        "liderazgo": 88,
+        "gestion": 80,
+        "negociacion": 88,
+        "tecnica": 78,
+        "comunicacion": 88,
+        "electoral": 86
+      },
+      "overall": 84,
+      "imagen": "images/dirigentes/sergio-massa.jpg"
+    },
+    {
+      "id": "juan-manzur",
+      "nombre": "Juan Manzur",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 82,
+        "negociacion": 80,
+        "tecnica": 78,
+        "comunicacion": 80,
+        "electoral": 82
+      },
+      "overall": 82,
+      "imagen": "images/dirigentes/juan-manzur.jpg"
+    },
+    {
+      "id": "alicia-kirchner",
+      "nombre": "Alicia Kirchner",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 88,
+        "negociacion": 85,
+        "tecnica": 78,
+        "comunicacion": 78,
+        "electoral": 82
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/alicia-kirchner.jpg"
+    },
+    {
+      "id": "axel-kicillof",
+      "nombre": "Axel Kicillof",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 80,
+        "negociacion": 78,
+        "tecnica": 88,
+        "comunicacion": 78,
+        "electoral": 82
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/axel-kicillof.jpg"
+    },
+    {
+      "id": "daniel-filmus",
+      "nombre": "Daniel Filmus",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 88,
+        "negociacion": 85,
+        "tecnica": 88,
+        "comunicacion": 84,
+        "electoral": 60
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/daniel-filmus.jpg"
+    },
+    {
+      "id": "florencio-randazzo",
+      "nombre": "Florencio Randazzo",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 84,
+        "negociacion": 80,
+        "tecnica": 74,
+        "comunicacion": 80,
+        "electoral": 70
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/florencio-randazzo.jpg"
+    },
+    {
+      "id": "julio-alak",
+      "nombre": "Julio Alak",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 78,
+        "negociacion": 82,
+        "tecnica": 76,
+        "comunicacion": 78,
+        "electoral": 82
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/julio-alak.jpg"
+    },
+    {
+      "id": "julio-de-vido",
+      "nombre": "Julio De Vido",
+      "atributos": {
+        "liderazgo": 84,
+        "gestion": 94,
+        "negociacion": 88,
+        "tecnica": 80,
+        "comunicacion": 72,
+        "electoral": 62
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/julio-de-vido.jpg"
+    },
+    {
+      "id": "julian-dominguez",
+      "nombre": "Julián Domínguez",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 80,
+        "negociacion": 86,
+        "tecnica": 76,
+        "comunicacion": 78,
+        "electoral": 78
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/julian-dominguez.jpg"
+    },
+    {
+      "id": "miguel-angel-pichetto",
+      "nombre": "Miguel Ángel Pichetto",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 74,
+        "negociacion": 90,
+        "tecnica": 88,
+        "comunicacion": 80,
+        "electoral": 68
+      },
+      "overall": 80,
+      "imagen": "images/dirigentes/miguel-angel-pichetto.jpg"
+    },
+    {
+      "id": "anibal-fernandez",
+      "nombre": "Aníbal Fernández",
+      "atributos": {
+        "liderazgo": 80,
+        "gestion": 74,
+        "negociacion": 86,
+        "tecnica": 80,
+        "comunicacion": 90,
+        "electoral": 70
+      },
+      "overall": 79,
+      "imagen": "images/dirigentes/anibal-fernandez.jpg"
+    },
+    {
+      "id": "julio-cobos",
+      "nombre": "Julio Cobos",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 76,
+        "negociacion": 80,
+        "tecnica": 76,
+        "comunicacion": 78,
+        "electoral": 84
+      },
+      "overall": 79,
+      "imagen": "images/dirigentes/julio-cobos.jpg"
+    },
+    {
+      "id": "nilda-garre",
+      "nombre": "Nilda Garré",
+      "atributos": {
+        "liderazgo": 84,
+        "gestion": 84,
+        "negociacion": 80,
+        "tecnica": 84,
+        "comunicacion": 78,
+        "electoral": 62
+      },
+      "overall": 79,
+      "imagen": "images/dirigentes/nilda-garre.jpg"
+    },
+    {
+      "id": "roberto-lavagna",
+      "nombre": "Roberto Lavagna",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 88,
+        "negociacion": 82,
+        "tecnica": 88,
+        "comunicacion": 78,
+        "electoral": 62
+      },
+      "overall": 79,
+      "imagen": "images/dirigentes/roberto-lavagna.jpg"
+    },
+    {
+      "id": "agustin-rossi",
+      "nombre": "Agustín Rossi",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 74,
+        "negociacion": 82,
+        "tecnica": 82,
+        "comunicacion": 80,
+        "electoral": 68
+      },
+      "overall": 78,
+      "imagen": "images/dirigentes/agustin-rossi.jpg"
+    },
+    {
+      "id": "debora-giorgi",
+      "nombre": "Débora Giorgi",
+      "atributos": {
+        "liderazgo": 72,
+        "gestion": 82,
+        "negociacion": 78,
+        "tecnica": 80,
+        "comunicacion": 72,
+        "electoral": 45
+      },
+      "overall": 78,
+      "imagen": "images/dirigentes/debora-giorgi.jpg"
+    },
+    {
+      "id": "juliana-di-tullio",
+      "nombre": "Juliana Di Tullio",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 70,
+        "negociacion": 82,
+        "tecnica": 80,
+        "comunicacion": 82,
+        "electoral": 70
+      },
+      "overall": 78,
+      "imagen": "images/dirigentes/juliana-di-tullio.jpg"
+    },
+    {
+      "id": "alberto-fernandez",
+      "nombre": "Alberto Fernández",
+      "atributos": {
+        "liderazgo": 75,
+        "gestion": 70,
+        "negociacion": 84,
+        "tecnica": 77,
+        "comunicacion": 84,
+        "electoral": 72
+      },
+      "overall": 77,
+      "imagen": "images/dirigentes/alberto-fernandez.jpg"
+    },
+    {
+      "id": "carlos-tomada",
+      "nombre": "Carlos Tomada",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 88,
+        "negociacion": 86,
+        "tecnica": 82,
+        "comunicacion": 72,
+        "electoral": 58
+      },
+      "overall": 77,
+      "imagen": "images/dirigentes/carlos-tomada.jpg"
+    },
+    {
+      "id": "gines-gonzalez-garcia",
+      "nombre": "Ginés González García",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 86,
+        "negociacion": 78,
+        "tecnica": 88,
+        "comunicacion": 82,
+        "electoral": 45
+      },
+      "overall": 77,
+      "imagen": "images/dirigentes/gines-gonzalez-garcia.jpg"
+    },
+    {
+      "id": "jorge-taiana",
+      "nombre": "Jorge Taiana",
+      "atributos": {
+        "liderazgo": 74,
+        "gestion": 76,
+        "negociacion": 84,
+        "tecnica": 86,
+        "comunicacion": 82,
+        "electoral": 62
+      },
+      "overall": 77,
+      "imagen": "images/dirigentes/jorge-taiana.jpg"
+    },
+    {
+      "id": "daniel-scioli",
+      "nombre": "Daniel Scioli",
+      "atributos": {
+        "liderazgo": 76,
+        "gestion": 68,
+        "negociacion": 80,
+        "tecnica": 65,
+        "comunicacion": 76,
+        "electoral": 89
+      },
+      "overall": 76,
+      "imagen": "images/dirigentes/daniel-scioli.jpg"
+    },
+    {
+      "id": "hector-timerman",
+      "nombre": "Héctor Timerman",
+      "atributos": {
+        "liderazgo": 74,
+        "gestion": 80,
+        "negociacion": 82,
+        "tecnica": 80,
+        "comunicacion": 80,
+        "electoral": 45
+      },
+      "overall": 76,
+      "imagen": "images/dirigentes/hector-timerman.jpg"
+    },
+    {
+      "id": "teresa-parodi",
+      "nombre": "Teresa Parodi",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 78,
+        "negociacion": 74,
+        "tecnica": 82,
+        "comunicacion": 86,
+        "electoral": 55
+      },
+      "overall": 76,
+      "imagen": "images/dirigentes/teresa-parodi.jpg"
+    },
+    {
+      "id": "alberto-sileoni",
+      "nombre": "Alberto Sileoni",
+      "atributos": {
+        "liderazgo": 68,
+        "gestion": 80,
+        "negociacion": 76,
+        "tecnica": 80,
+        "comunicacion": 78,
+        "electoral": 45
+      },
+      "overall": 74,
+      "imagen": "images/dirigentes/alberto-sileoni.jpg"
+    },
+    {
+      "id": "arturo-puricelli",
+      "nombre": "Arturo Puricelli",
+      "atributos": {
+        "liderazgo": 78,
+        "gestion": 72,
+        "negociacion": 78,
+        "tecnica": 74,
+        "comunicacion": 62,
+        "electoral": 80
+      },
+      "overall": 74,
+      "imagen": "images/dirigentes/arturo-puricelli.jpg"
+    },
+    {
+      "id": "jose-maria-diaz-bancalari",
+      "nombre": "José María Díaz Bancalari",
+      "atributos": {
+        "liderazgo": 76,
+        "gestion": 72,
+        "negociacion": 86,
+        "tecnica": 74,
+        "comunicacion": 70,
+        "electoral": 65
+      },
+      "overall": 74,
+      "imagen": "images/dirigentes/jose-maria-diaz-bancalari.jpg"
+    },
+    {
+      "id": "juan-manuel-abal-medina",
+      "nombre": "Juan Manuel Abal Medina",
+      "atributos": {
+        "liderazgo": 76,
+        "gestion": 72,
+        "negociacion": 80,
+        "tecnica": 80,
+        "comunicacion": 80,
+        "electoral": 55
+      },
+      "overall": 74,
+      "imagen": "images/dirigentes/juan-manuel-abal-medina.jpg"
+    },
+    {
+      "id": "rafael-bielsa",
+      "nombre": "Rafael Bielsa",
+      "atributos": {
+        "liderazgo": 72,
+        "gestion": 72,
+        "negociacion": 76,
+        "tecnica": 82,
+        "comunicacion": 84,
+        "electoral": 60
+      },
+      "overall": 74,
+      "imagen": "images/dirigentes/rafael-bielsa.jpg"
+    },
+    {
+      "id": "enrique-meyer",
+      "nombre": "Enrique Meyer",
+      "atributos": {
+        "liderazgo": 65,
+        "gestion": 78,
+        "negociacion": 70,
+        "tecnica": 76,
+        "comunicacion": 65,
+        "electoral": 45
+      },
+      "overall": 72,
+      "imagen": "images/dirigentes/enrique-meyer.jpg"
+    },
+    {
+      "id": "hernan-lorenzino",
+      "nombre": "Hernán Lorenzino",
+      "atributos": {
+        "liderazgo": 58,
+        "gestion": 80,
+        "negociacion": 80,
+        "tecnica": 94,
+        "comunicacion": 62,
+        "electoral": 45
+      },
+      "overall": 72,
+      "imagen": "images/dirigentes/hernan-lorenzino.jpg"
+    },
+    {
+      "id": "jose-pampuro",
+      "nombre": "José Pampuro",
+      "atributos": {
+        "liderazgo": 70,
+        "gestion": 74,
+        "negociacion": 78,
+        "tecnica": 77,
+        "comunicacion": 68,
+        "electoral": 64
+      },
+      "overall": 72,
+      "imagen": "images/dirigentes/jose-pampuro.jpg"
+    },
+    {
+      "id": "juan-carlos-tedesco",
+      "nombre": "Juan Carlos Tedesco",
+      "atributos": {
+        "liderazgo": 66,
+        "gestion": 76,
+        "negociacion": 70,
+        "tecnica": 84,
+        "comunicacion": 70,
+        "electoral": 45
+      },
+      "overall": 72,
+      "imagen": "images/dirigentes/juan-carlos-tedesco.jpg"
+    },
+    {
+      "id": "daniel-gollan",
+      "nombre": "Daniel Gollan",
+      "atributos": {
+        "liderazgo": 62,
+        "gestion": 70,
+        "negociacion": 68,
+        "tecnica": 80,
+        "comunicacion": 72,
+        "electoral": 50
+      },
+      "overall": 70,
+      "imagen": "images/dirigentes/daniel-gollan.jpg"
+    },
+    {
+      "id": "horacio-rosatti",
+      "nombre": "Horacio Rosatti",
+      "atributos": {
+        "liderazgo": 65,
+        "gestion": 66,
+        "negociacion": 72,
+        "tecnica": 80,
+        "comunicacion": 65,
+        "electoral": 65
+      },
+      "overall": 69,
+      "imagen": "images/dirigentes/horacio-rosatti.jpg"
+    },
+    {
+      "id": "martin-lousteau",
+      "nombre": "Martín Lousteau",
+      "atributos": {
+        "liderazgo": 62,
+        "gestion": 62,
+        "negociacion": 64,
+        "tecnica": 78,
+        "comunicacion": 78,
+        "electoral": 62
+      },
+      "overall": 69,
+      "imagen": "images/dirigentes/martin-lousteau.jpg"
+    },
+    {
+      "id": "carlos-fernandez",
+      "nombre": "Carlos Fernández",
+      "atributos": {
+        "liderazgo": 58,
+        "gestion": 74,
+        "negociacion": 68,
+        "tecnica": 80,
+        "comunicacion": 60,
+        "electoral": 45
+      },
+      "overall": 68,
+      "imagen": "images/dirigentes/carlos-fernandez.jpg"
+    },
+    {
+      "id": "gustavo-beliz",
+      "nombre": "Gustavo Béliz",
+      "atributos": {
+        "liderazgo": 64,
+        "gestion": 66,
+        "negociacion": 68,
+        "tecnica": 78,
+        "comunicacion": 78,
+        "electoral": 55
+      },
+      "overall": 67,
+      "imagen": "images/dirigentes/gustavo-beliz.jpg"
+    },
+    {
+      "id": "alberto-iribarne",
+      "nombre": "Alberto Iribarne",
+      "atributos": {
+        "liderazgo": 65,
+        "gestion": 66,
+        "negociacion": 74,
+        "tecnica": 80,
+        "comunicacion": 65,
+        "electoral": 45
+      },
+      "overall": 66,
+      "imagen": "images/dirigentes/alberto-iribarne.jpg"
+    },
+    {
+      "id": "carlos-casamiquela",
+      "nombre": "Carlos Casamiquela",
+      "atributos": {
+        "liderazgo": 58,
+        "gestion": 72,
+        "negociacion": 68,
+        "tecnica": 88,
+        "comunicacion": 62,
+        "electoral": 45
+      },
+      "overall": 66,
+      "imagen": "images/dirigentes/carlos-casamiquela.jpg"
+    },
+    {
+      "id": "felisa-miceli",
+      "nombre": "Felisa Miceli",
+      "atributos": {
+        "liderazgo": 62,
+        "gestion": 68,
+        "negociacion": 68,
+        "tecnica": 85,
+        "comunicacion": 65,
+        "electoral": 45
+      },
+      "overall": 66,
+      "imagen": "images/dirigentes/felisa-miceli.jpg"
+    },
+    {
+      "id": "miguel-peirano",
+      "nombre": "Miguel Peirano",
+      "atributos": {
+        "liderazgo": 55,
+        "gestion": 67,
+        "negociacion": 70,
+        "tecnica": 85,
+        "comunicacion": 64,
+        "electoral": 45
+      },
+      "overall": 66,
+      "imagen": "images/dirigentes/miguel-peirano.jpg"
+    },
+    {
+      "id": "graciela-ocana",
+      "nombre": "Graciela Ocaña",
+      "atributos": {
+        "liderazgo": 62,
+        "gestion": 60,
+        "negociacion": 62,
+        "tecnica": 70,
+        "comunicacion": 70,
+        "electoral": 60
+      },
+      "overall": 64,
+      "imagen": "images/dirigentes/graciela-ocana.jpg"
+    },
+    {
+      "id": "norberto-yauhar",
+      "nombre": "Norberto Yauhar",
+      "atributos": {
+        "liderazgo": 65,
+        "gestion": 70,
+        "negociacion": 70,
+        "tecnica": 72,
+        "comunicacion": 65,
+        "electoral": 45
+      },
+      "overall": 64,
+      "imagen": "images/dirigentes/norberto-yauhar.jpg"
+    }
+  ]
+}
