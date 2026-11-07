@@ -1,1 +1,482 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FIFA Político: estadísticas y cartas de dirigentes argentinos entre 2003 y 2015.">
+  <title>FIFA Político | Argentina 2003–2015</title>
+
+  <style>
+    :root {
+      --fondo: #101B2B;
+      --tarjeta: #172B40;
+      --celeste: #8ED8E8;
+      --blanco: #F4F7FA;
+      --secundario: #AAB8C7;
+      --oro: #E5BD65;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--fondo);
+      color: var(--blanco);
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 7%;
+      border-bottom: 1px solid #ffffff18;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--celeste);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    nav a {
+      color: var(--secundario);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--celeste);
+    }
+
+    .portada {
+      padding: 75px 7% 55px;
+      background:
+        radial-gradient(ellipse at 80% 30%, #24516a55, transparent 55%),
+        linear-gradient(120deg, #101B2B, #172B40);
+    }
+
+    .etiqueta {
+      color: var(--celeste);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: var(--celeste);
+    }
+
+    .portada p {
+      color: var(--secundario);
+      margin-top: 22px;
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 570px;
+    }
+
+    .periodo {
+      display: inline-block;
+      margin-top: 25px;
+      border: 1px solid #8ED8E866;
+      color: var(--celeste);
+      padding: 9px 16px;
+      border-radius: 4px;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    main {
+      padding: 45px 7% 80px;
+    }
+
+    .seccion-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .subtitulo {
+      color: var(--secundario);
+      font-size: 14px;
+    }
+
+    .buscador {
+      width: 100%;
+      max-width: 330px;
+      padding: 13px 16px;
+      border-radius: 5px;
+      border: 1px solid #ffffff25;
+      background: #172B40;
+      color: white;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .buscador:focus {
+      border-color: var(--celeste);
+    }
+
+    .cantidad {
+      color: var(--secundario);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .cartas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 22px;
+    }
+
+    .carta {
+      background: linear-gradient(155deg, #203c55, #142638 75%);
+      border: 1px solid #8ED8E833;
+      border-radius: 12px;
+      padding: 19px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .carta:hover {
+      transform: translateY(-6px);
+      border-color: var(--oro);
+    }
+
+    .carta::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #8ED8E808;
+      top: -75px;
+      right: -75px;
+    }
+
+    .carta-superior {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .overall {
+      font-size: 43px;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--oro);
+    }
+
+    .overall-label {
+      color: var(--secundario);
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    .foto {
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #29445b;
+      border: 2px solid #8ED8E877;
+    }
+
+    .nombre {
+      font-size: 17px;
+      font-weight: bold;
+      min-height: 42px;
+      line-height: 1.25;
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    .identificacion {
+      color: var(--secundario);
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 17px;
+    }
+
+    .atributos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px 16px;
+      border-top: 1px solid #ffffff20;
+      padding-top: 16px;
+    }
+
+    .atributo {
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+      font-size: 11px;
+      color: var(--secundario);
+    }
+
+    .atributo strong {
+      color: var(--blanco);
+      font-size: 13px;
+    }
+
+    .mensaje {
+      color: var(--secundario);
+      padding: 30px 0;
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      border-top: 1px solid #ffffff18;
+      padding: 25px 7%;
+      color: var(--secundario);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 5%;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .portada {
+        padding: 55px 5% 45px;
+      }
+
+      main {
+        padding: 35px 5% 60px;
+      }
+
+      .cartas {
+        grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+        gap: 12px;
+      }
+
+      .carta {
+        padding: 13px;
+      }
+
+      .foto {
+        width: 53px;
+        height: 53px;
+      }
+
+      .overall {
+        font-size: 35px;
+      }
+
+      .nombre {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">FIFA <span>POLÍTICO</span></div>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="planteles.html">Planteles</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="comparador.html">Comparador</a>
+      <a href="devoluciones.html">Devoluciones</a>
+    </nav>
+  </header>
+
+  <section class="portada">
+    <div class="etiqueta">Una década de política argentina</div>
+
+    <h1>FIFA <span>POLÍTICO</span></h1>
+
+    <p>
+      Los protagonistas de la política argentina entre 2003 y 2015,
+      evaluados a través de seis atributos. ¿Quiénes fueron las figuras
+      más destacadas de la década?
+    </p>
+
+    <div class="periodo">ARGENTINA · 2003 — 2015</div>
+  </section>
+
+  <main>
+    <section>
+      <div class="seccion-titulo">
+        <div>
+          <h2>Los dirigentes</h2>
+          <p class="subtitulo">Conocé las estadísticas de cada protagonista.</p>
+        </div>
+
+        <input
+          type="search"
+          id="buscador"
+          class="buscador"
+          placeholder="Buscar dirigente..."
+          aria-label="Buscar dirigente"
+        >
+      </div>
+
+      <div class="cantidad" id="cantidad">Cargando dirigentes...</div>
+
+      <div class="cartas" id="cartas">
+        <p class="mensaje">Cargando base de datos...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    FIFA POLÍTICO · Argentina 2003–2015
+  </footer>
+
+  <script>
+    const contenedor = document.getElementById("cartas");
+    const buscador = document.getElementById("buscador");
+    const cantidad = document.getElementById("cantidad");
+
+    let dirigentes = [];
+
+    const nombresAtributos = {
+      liderazgo: "LID",
+      gestion: "GES",
+      negociacion: "NEG",
+      tecnica: "TEC",
+      comunicacion: "COM",
+      electoral: "ELE"
+    };
+
+    function crearCarta(dirigente) {
+      const atributos = Object.entries(dirigente.atributos)
+        .map(([clave, valor]) => `
+          <div class="atributo">
+            <span>${nombresAtributos[clave] || clave.toUpperCase()}</span>
+            <strong>${valor}</strong>
+          </div>
+        `).join("");
+
+      return `
+        <article class="carta">
+          <div class="carta-superior">
+            <div>
+              <div class="overall">${dirigente.overall}</div>
+              <div class="overall-label">OVERALL</div>
+            </div>
+            <img
+              class="foto"
+              src="${dirigente.imagen}"
+              alt="${dirigente.nombre}"
+              onerror="this.style.visibility='hidden'"
+            >
+          </div>
+
+          <div class="nombre">${dirigente.nombre}</div>
+          <div class="identificacion">ARGENTINA · 2003–2015</div>
+
+          <div class="atributos">
+            ${atributos}
+          </div>
+        </article>
+      `;
+    }
+
+    function mostrarDirigentes(lista) {
+      cantidad.textContent = `${lista.length} dirigentes`;
+
+      if (lista.length === 0) {
+        contenedor.innerHTML =
+          '<p class="mensaje">No encontramos dirigentes con ese nombre.</p>';
+        return;
+      }
+
+      contenedor.innerHTML = lista.map(crearCarta).join("");
+    }
+
+    async function cargarDirigentes() {
+      try {
+        const respuesta = await fetch("data/dirigentes.json");
+
+        if (!respuesta.ok) {
+          throw new Error("No se pudo encontrar el archivo JSON.");
+        }
+
+        const datos = await respuesta.json();
+        dirigentes = datos.dirigentes;
+
+        mostrarDirigentes(dirigentes);
+      } catch (error) {
+        cantidad.textContent = "Error al cargar los datos";
+        contenedor.innerHTML = `
+          <p class="mensaje">
+            No pudimos cargar la base de datos.
+            Revisá que el archivo esté en data/dirigentes.json.
+          </p>
+        `;
+        console.error(error);
+      }
+    }
+
+    buscador.addEventListener("input", () => {
+      const busqueda = buscador.value
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+      const filtrados = dirigentes.filter(dirigente =>
+        dirigente.nombre
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .includes(busqueda)
+      );
+
+      mostrarDirigentes(filtrados);
+    });
+
+    cargarDirigentes();
+  </script>
+
+</body>
+</html>
+
